@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+        body{
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            font-family: "lato static" , lato;
+        }
+        p,h1,h2,h3,a,ul{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            color: #222;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 60px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            text-transform: uppercase;
+
+        }
+        nav ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            
+        }
+        nav li {
+            list-style-type: none;
+            margin-left: 20px;
+        }
+        nav h1{
+            font-size: 3em;
+        }
+        nav p , nav a{
+            color: #777;
+            font-weight: 600;
+        }
+        footer{
+            color: #777;
+            text-align: center;
+            margin: 80px auto 20px;
+        }
+        h2{
+            margin-bottom: 40px;
+        }
+        h3{
+            text-transform: capitalize;
+            margin-bottom: 8px;
+        }
+        .content{
+            margin-left: 20px;
+            font-size: 20px;
+        }
+
+        .blog a {
+            display: block;
+            margin: 40px 0;
+            padding-left: 30px;
+            border-left: 6px solid crimson;
+        }
+
+        .blog a:hover h3{
+            color: crimson;
+        }
+
+        .detailes{
+            position: relative;
+        }
+
+        .delete{
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 50%;
+            padding: 8px;
+            font-size: 30px;
+        }
+        
+        .bi-trash-fill{
+            font-size: 30px;
+        }
+
+        .delete:hover{
+            cursor: pointer;
+            box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+        }
+        
+        .create-blog h1 {
+            padding-bottom: 20px;
+        }
+        .create-blog{
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .create-blog form label {
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+        .create-blog input{
+            width: 100%;
+            margin-bottom: 20px;
+            margin-top: 5px;
+            height: 30px;
+            font-size: 20px;
+        }
+        textarea{
+            height: 120px;
+            width: 500px;
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+        button{
+            width: 500px;
+            height: 50px;
+            font-size: 20px;
+            background-color: crimson;
+            cursor: pointer;
+            color: white;
+        }
