@@ -8,6 +8,7 @@ const { result } = require('lodash');
 const { render } = require('ejs');
 const app = express()
 
+const dbURI = "mongodb+srv://gatikwrking:temp123@testcluster.ct1zp.mongodb.net/nodetuts?retryWrites=true&w=majority&appName=testcluster"
 
 mongoose.connect(dbURI)
     .then((result)=>console.log("connected to BD") );
