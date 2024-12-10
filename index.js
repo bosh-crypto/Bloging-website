@@ -3,10 +3,10 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const Blog = require('./models/blog');
 const port = 3000
-const dbURI = require('./dbfile');
 const { result } = require('lodash');
 const { render } = require('ejs');
 const app = express()
+const dbURI = require('./dbfile');
 
 
 mongoose.connect(dbURI)
