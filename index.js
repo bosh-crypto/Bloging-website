@@ -12,7 +12,6 @@ mongoose.connect(dbURI)
     .then((result)=>console.log("connected to BD") );
     
 app.set("view engine" , "ejs");
-//app.use(express.static("public"))
 app.use('/public', express.static('public'));
 app.use(express.urlencoded());
 app.use(morgan('dev'))
