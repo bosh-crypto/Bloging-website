@@ -16,12 +16,9 @@ app.use('/public', express.static('public'));
 app.use(express.urlencoded());
 app.use(morgan('dev'))
 
-
-
 app.get('/', (req, res) => {  
     res.redirect("/blogs");
 })
-
 
 app.get('/about', (req, res) => {
     res.render('aboutus' , {title: "About" })
